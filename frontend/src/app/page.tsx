@@ -1,3 +1,9 @@
+import { ThemeSwitch } from "@/components/theme-switch";
+
 export default function Home() {
-  return <div className="">codename Mochi</div>;
+  return (
+    <>
+      <ThemeSwitch />
+    </>
+  );
 }
