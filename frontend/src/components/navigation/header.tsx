@@ -1,6 +1,7 @@
 import Link from "next/link"
 import CartAside from "../cart/cart-aside"
 import { ThemeSwitch } from "../theme-switch"
+import MenuAside from "./menu-aside"
 
 export function Header() {
   return (
@@ -8,8 +9,8 @@ export function Header() {
       <div className="grid grid-cols-3 justify-items-center w-full h-full">
         <HeaderRight />
 
-        <div className="place-self-start mx-1 h-full sm:hidden">
-          {/* <MobileAside /> */}
+        <div className="self-center place-self-start sm:hidden">
+          <MenuAside />
         </div>
 
         <Link className="flex justify-center h-full" href="/">

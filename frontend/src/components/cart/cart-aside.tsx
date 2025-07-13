@@ -1,3 +1,5 @@
+import { ShoppingCart } from "lucide-react"
+import { Button } from "../ui/button"
 import {
   Sheet,
   SheetContent,
@@ -5,7 +7,6 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "../ui/sheet"
-import CartButton from "./cart-button"
 
 export default function CartAside() {
   return (
@@ -24,5 +25,13 @@ export default function CartAside() {
         {/* </Suspense> */}
       </SheetContent>
     </Sheet>
+  )
+}
+
+function CartButton() {
+  return (
+    <Button aria-label="View cart" variant={"ghost"} size={"icon"}>
+      <ShoppingCart />
+    </Button>
   )
 }
